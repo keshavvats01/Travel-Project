@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="file:///C:/Users/KESHAV/Desktop/My%20Slider">
+  <link rel="stylesheet" href="../css/travel.css">
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<script>
+    // Functions to show and hide login and signup forms
+    function geetika() {
+        document.getElementById("muskaan").style.display = 'block';
+    }
+    function close_review() {
+        document.getElementById("muskaan").style.display = 'none';
+    }
+    function Keshav() {
+      document.getElementById("login").style.display = 'block';
+      document.getElementById("signup").style.display = 'none'; 
+    }
+    function close_login() {
+      document.getElementById("login").style.display = 'none';
+    }
+    function showSignup() {
+      document.getElementById("signup").style.display = 'block';
+      document.getElementById("login").style.display = 'none';
+    }
+    function closeSignup() {
+      document.getElementById("signup").style.display = 'none';
+    }
+  </script>
+
+<!-- End WOWSlider.com HEAD section -->
+</head>
+<body>
+<!-------Review Pop Div-->
+ 
+<div class="modal" id="muskaan">
+    <div class="review-content">
+        <span class="close_button" onclick="close_review()">&times;</span>
+        <h2>Review us</h2>
+        <p>Leave your Review For Our Services</p>
+        <textarea cols="30" rows="10"></textarea>
+    </div>
+</div>
+
+   
+   <!--Review Pop Up Div End-->
+   <!-- Login form-->
+   <div class="modal" id="login">
+    <div class="login-container">
+        <span class="close_button" onclick="close_login()">&times;</span>
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-text">Don't have an account? <a href="#" onclick="showSignup()">Create an account</a></p>
+    </div>
+</div>
+   <!--Login form end -->
+  <!--Signup form start-->
+<div class="modal" id="signup">
+    <div class="signup-container">
+        <span class="close_button" onclick="closeSignup()">&times;</span>
+        <h2>Sign Up</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="signup-text">Already have an account? <a href="#" onclick="Keshav()">Sign in</a></p>
+    </div>
+</div>
+<!--Signup form End-->
+    <header>
+  <div class="header">
+    <div class="header-left">
+        <h2 class="heading">Traveling</h2>
+        <!-- <div class="address">
+            Sco 112-113 First Floor, Chandigarh, Sector 34A
+        </div> -->
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#" onclick="Keshav()">Login</a>
+        <a href="#" onclick="showSignup()">Signup</a>
+    </div>
+    <div class="contact-info">
+        <span>📞 +917740005114, +917814819641</span>
+        <span>✉️ <a href="mailto:info@travelwebsite.com">Keshav@gmail.com</a></span>
+    </div>
+</div>
+</header>
+<marquee class="latest_div" onmouseover="this.stop()" scrollamount="15" onmouseout="this.start()" >
+    Latest Offer: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, beatae.</marquee>
+<div class="Header_after">
+    <div class="login_div">
+   <h2 class="enquiry">Enquiry</h2> 
+   <form action="#" method="post">
+    <div class="enquiry_div">
+    <div class="form_div">
+        <label>Name:</label>
+        <input class="myfield" type="text " name="name" required placeholder="Enter Your name">
+    </div>
+    <div class="form_div">
+        <label>Email:</label>
+        <input class="myfield" type="text " name="Email" required placeholder="Enter Your Email">
+    </div>
+    <div class="form_div">
+        <label>Subject:</label>
+        <input class="myfield" type="text " name="name" required placeholder="Title of your Querry">
+    </div>
+    <div class="form_div">
+        <label>Message:</label>
+     <textarea class="mymessage" rows="8" name="message" required></textarea>
+    </div>
+    <div class="form_div">
+    <button class="btn">Submit</button>
+    </div>
+   </form>
+</div>
+    </div>
+    <div class="gellery_div">
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+    <div class="ws_images"><ul>
+            <li><img src="data1/images/pexelsshottrotter27518233.jpg" alt="Baali Trip in Just Under Rs.50000-/" title="Baali Trip in Just Under Rs.50000-/" id="wows1_0"/></li>
+            <li><a href="http://wowslider.net"><img src="data1/images/pexelsgsntravel28518053.jpg" alt="slideshow javascript" title="Your Smile Is Nature" id="wows1_1"/></a></li>
+            <li><img src="data1/images/pexelssuju28530087.jpg" alt="Goa Trip In Just Rs.25000-/" title="Goa Trip In Just Rs.25000-/" id="wows1_2"/></li>
+        </ul></div>
+        <div class="ws_bullets"><div>
+            <a href="#" title="Baali Trip in Just Under Rs.50000-/"><span><img src="data1/tooltips/pexelsshottrotter27518233.jpg" alt="Baali Trip in Just Under Rs.50000-/"/>1</span></a>
+            <a href="#" title="Your Smile Is Nature"><span><img src="data1/tooltips/pexelsgsntravel28518053.jpg" alt="Your Smile Is Nature"/>2</span></a>
+            <a href="#" title="Goa Trip In Just Rs.25000-/"><span><img src="data1/tooltips/pexelssuju28530087.jpg" alt="Goa Trip In Just Rs.25000-/"/>3</span></a>
+        </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">image slider</a> by WOWSlider.com v9.0</div>
+    <div class="ws_shadow"></div>
+    </div>	
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+    <!-- End WOWSlider.com BODY section -->
+    </div> 
+    <div class="location_div">
+   <h2 class="enquiry">OUR LOCATION</h2>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.8065234240944!2d76.7188699!3d30.695719299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedb7aaa7f87f%3A0x46bf8792f3e6451!2sTravel%20Windo!5e0!3m2!1sen!2sin!4v1727104899699!5m2!1sen!2sin" width="100%" height="302" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<div class="package_heading">
+    <h2>OUR PACAKGES</h2>
+</div>
+<div class="package_offer_div">
+<div class="offer_card">
+
+    <img class="new_img" src="./images/Yellow and Black Illustrative Cars and Travel Logo.png" alt="#">
+</div>
+<div class="offer_card">
+    <img class="new_img" src="./images/Bright Travel India Packages Promo Instagram Post.png" alt="#">
+</div>
+<div class="offer_card">
+    <img class="new_img" src="./images/Brown Classic Rajasthan Travel Package Offer Promo Instagram Post.png" alt="#">
+</div>
+</div>
+<div class="whychooseus">
+    <a href="readmore.html" class="readbutton">Read us?</a>
+</div>
+
+<div class="media_content">
+    <div class="media">
+    <img src="images/review.png" class="review_image"/>
+    <button class="review_button" onclick="geetika()">Review Now</button>
+    </div>
+    <div class="media">
+        <iframe style="width: 100%; height:100%;" src="https://www.youtube.com/embed/9yXiZuRFALs?si=qibgDVEitKdDdUYU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+</div>
+<footer>
+    <div class="footer_div">
+        <div class="footer_top_div">
+                <div class="footer_top_content">
+                    <table>
+                          <tr>
+                            <td class="payment"><img src="images/qrcode.png" width="150" height="150"/></td>
+                            <!-- <td class="payment"><img src="images/payment.jpg" width="270" height="150"/></td> -->
+                          </tr>
+                          <tr>
+                            <td align="center"><h3>Booking Now </h3></td>
+                          </tr>
+                    </table>
+                </div>
+                <div class="footer_top_content">
+   
+                     <table   cellpadding="8">
+                        <tr align="center">
+                            <th>Menu</th>
+                            <th>Explore</th>
+                            <th>Policy</th>
+                        </tr>
+                        <tr align="center">
+                            <td><a href="Login.html">Login</a></td>
+                          
+                            <td><a href="index.html">Subscribe us</a></td>
+                            <td><a href="About.html">Deal Of the Day</a></td>
+                          
+                        </tr>
+                        <tr align="center">
+                            <td><a href="index.html">Home</a></td>
+                            <td><a href="index.html">Our Latest offer</a></td>
+                         
+                            <td><a href="About.html">Privacy & policy</a></td>
+                        </tr>
+                        <tr align="center">
+                            <td><a href="Contact.html">Contact</a></td>
+                            <td><a href="Contact.html">Term & Condition</a></td>
+                           
+                            <td><a href="Contact.html">Recent Added Blogs</a></td>
+                        </tr>
+                      
+                        <tr align="center">
+                            <td><a href="About.html">About us</a></td>
+                            <td><a href="Login.html">Become A Partner?</a></td>
+                            <td><a href="Login.html">Upcoming New Packeges</a></td>
+                        </tr>
+
+                     </table>
+                      
+
+                </div>
+                <div class="footer_top_content">
+                <table cellpadding="8" align="center">
+                     <tr>
+                      <th>Address</th>
+                     </tr>
+                     <tr>
+                        <td>Chandigarh Sec34A Sco 112-113 First Floor </td>
+                     </tr>
+                     <tr>
+                        <td>Phone :+91-9728082087 , +919712204693</td>
+                     </tr>
+                     <tr align="center">
+                        <td>Follow us:</td>
+                     </tr>
+                     <tr align="center">
+                        <td><a href="">Facebook</a>&nbsp;|&nbsp;<a href="">Instagram</a>&nbsp;|&nbsp;<a href="">Twitter</a></td>
+                     </tr>
+                </table>
+                </div>
+        </div>
+<!-- Last div-->
+<div class="footer_last_div">
+    <div class="footer_last_content">
+        <b>For Pre-Booking Pay Now  <i class="fa-solid fa-angle-down"></i></b><br>
+        <br>
+        <i id="font" class="fa-brands fa-cc-visa"></i>    
+        <i id="font" class="fa-brands fa-paypal"></i>
+        <i id="font" class="fa-brands fa-google-pay"></i>
+        <i id="font" class="fa-brands fa-amazon-pay"></i>
+        <i id="font" class="fa-solid fa-credit-card"></i>
+    </div>
+    <!-- <div class="footer_bottom_content">
+        <ul class="social_links">
+            <li><a href="#"><i class="fab fa-facebook-f" style="font-size:30px;"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram" style="font-size:30px;"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter" style="font-size:30px;"></i></a></li>
+        </ul>
+    </div> -->
+    <div class="footer_last3_content">
+       <label for=""><h3>For More Info <i class="fa-solid fa-angle-down"></i></h3></label>
+     <input type="number" name="number" placeholder="Enter Your contact No." required>
+     <button class="btn btn-primary">Submit</button><br>
+     <h2>We Contact You Soon..</h2>
+    </div>
+</div>
+ <!-- end-->
+        <div class="footer_bottom_div">
+            <div class="footer_bottom_content">
+                <h4>&copy; 2024 YourCompany. All rights reserved.</h4>
+            </div>
+            <div class="footer_bottom_content">
+                <ul class="social_links">
+                    <li><a href="#"><i class="fab fa-facebook-f" style="font-size:30px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram" style="font-size:30px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" style="font-size:30px;"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer_bottom_content">
+                <h2 class="last_div"><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></h2>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>
